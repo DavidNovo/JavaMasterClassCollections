@@ -7,7 +7,6 @@ package net.novogrodsky;
 public class App {
 
 
-
   /**
    * The main method 'nuff said.
    */
@@ -15,9 +14,9 @@ public class App {
     System.out.println("Hello World!");
 
     // first part, using the built-in Arrays
-    int[] myIntegers = BuiltInArray.getIntegers(5);
+/*    int[] myIntegers = BuiltInArray.getIntegers(5);
     int[] sorted = BuiltInArray.sortIntegers(myIntegers);
-    BuiltInArray.printArray(sorted);
+    BuiltInArray.printArray(sorted);*/
 
     // Code exercise to understand ArrayLists
     // Create a program that implements a simple mobile phone with the following capabilities.
@@ -34,6 +33,7 @@ public class App {
     // MobilePhone should do everything with Contact objects only.
 
     // Start running the mobile phone application
+    MobilePhone.start();
 
 
   }

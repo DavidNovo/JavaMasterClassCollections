@@ -22,6 +22,7 @@ public class AppTest
 
   /**
    * Default test suite.
+   *
    * @return the suite of tests being tested
    */
   public static Test suite() {

@@ -2,6 +2,9 @@ package net.novogrodsky;
 
 public class Contact {
 
+  private String fullName = null;
+  private String phoneNumber = null;
+
   public String getFullName() {
     return fullName;
   }
@@ -17,9 +20,6 @@ public class Contact {
   public void setPhoneNumber(String phoneNumber) {
     this.phoneNumber = phoneNumber;
   }
-
-  private String fullName = null;
-  private String phoneNumber = null;
 
 
 }

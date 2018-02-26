@@ -1,7 +1,5 @@
 package net.novogrodsky;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 public class ContactTest {
