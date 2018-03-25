@@ -2,7 +2,8 @@ package net.novogrodsky.generics;
 import java.util.ArrayList;
 
 /**
- * Created by dev on 17/10/2015.
+ * Note the generic on the class level
+ * it determines the type of player allowed in the team class.
  */
 public class Team<T extends Player> implements Comparable<Team<T>> {
     private String name;

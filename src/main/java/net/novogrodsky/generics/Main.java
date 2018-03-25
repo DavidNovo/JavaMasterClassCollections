@@ -1,4 +1,4 @@
-package com.timbuchalka;
+package net.novogrodsky.generics;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -47,7 +47,24 @@ public class Main {
         System.out.println(hawthorn.compareTo(adelaideCrows));
         System.out.println(melbourne.compareTo(fremantle));
 
-        ArrayList<Team> teams;
-        Collections.sort(teams);
+        System.out.println("**__________**");
+        System.out.println("The Generics Challenge");
+        // now the generics challenge
+        //       ArrayList<Team> teams;
+        //       Collections.sort(teams);
+        // my attemp, close...LeagueTable<Football> footballLeague = new LeagueTable<>();
+        LeagueTable<Team<FootballPlayer>> footballLeague = new LeagueTable<>("AFL");
+        footballLeague.addTeam(adelaideCrows);
+        footballLeague.addTeam(melbourne);
+        footballLeague.addTeam(hawthorn);
+        footballLeague.addTeam(fremantle);
+
+        // the following lane has compile time error
+        // the types do not match
+        //footballLeague.addTeam(baseballTeam);
+
+        System.out.println(" League Results ");
+        footballLeague.showLeagueTable();
+
     }
 }
