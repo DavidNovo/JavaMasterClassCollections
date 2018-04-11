@@ -12,6 +12,11 @@ public class Location {
   private final String description;
   private final Map<String, Integer> exits;
 
+  /**
+   * This represents a location in the game.
+   * @param locationId
+   * @param description
+   */
   public Location(int locationId, String description) {
     this.locationId = locationId;
     this.description = description;
