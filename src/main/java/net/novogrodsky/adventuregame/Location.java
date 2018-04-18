@@ -16,16 +16,13 @@ public class Location {
    * This represents a location in the game.
    * @param locationId
    * @param description
+   * @param exits
    */
-  public Location(int locationId, String description) {
-    this.locationId = locationId;
+  public Location(int locationId, String description, Map<String, Integer> exits) {
+    this.locationId= locationId;
     this.description = description;
-    this.exits = new HashMap<String, Integer>();
+    this.exits = new HashMap<String, Integer>(exits);
     this.exits.put("Q", 0);
-  }
-
-  public void addExit(String direction, int location) {
-    exits.put(direction, location);
   }
 
   public int getLocationId() {
