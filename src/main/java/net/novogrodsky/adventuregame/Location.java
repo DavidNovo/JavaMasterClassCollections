@@ -14,14 +14,16 @@ public class Location {
 
   /**
    * This represents a location in the game.
-   * @param locationId
-   * @param description
-   * @param exits
    */
+  // the problem is if the Map is set to null, the game will compile, but blow up  during runtime.
   public Location(int locationId, String description, Map<String, Integer> exits) {
-    this.locationId= locationId;
+    this.locationId = locationId;
     this.description = description;
-    this.exits = new HashMap<String, Integer>(exits);
+    if (exits == null) {
+      this.exits = new HashMap<>();
+    } else {
+      this.exits = new HashMap<String, Integer>(exits);
+    }
     this.exits.put("Q", 0);
   }
 

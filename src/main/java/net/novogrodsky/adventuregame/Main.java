@@ -55,6 +55,9 @@ public class Main {
     tempExit.put("W", 2);
     locations.put(5, new Location(5, "You are in the forest", tempExit));
 
+    locations.put(6, new Location(5, "  ", null));
+
+
     Map<String, String> vocabulary = new HashMap<String, String>();
     vocabulary.put("QUIT", "Q");
     vocabulary.put("NORTH", "N");
